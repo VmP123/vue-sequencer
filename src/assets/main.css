@@ -1,0 +1,42 @@
+@import './base.css';
+
+#app {
+  /* max-width: 1280px; */
+	width: 980px;
+  margin: 0 auto;
+	padding-bottom: 10px;
+  font-weight: normal;
+}
+
+.normal {
+  
+}
+
+.highlighted {
+  
+}
+
+.button {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+	color: #181818;
+}
+.step-button {
+	border-radius: 20px;
+	border: solid 10px;
+}
+
+.step-button-inner {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	border: solid 10px;
+	
+}
