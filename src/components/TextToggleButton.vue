@@ -13,7 +13,3 @@ function toggle() {
     <span v-show="value">X2</span>
   </div>
 </template>
-
-<style scoped>
-
-</style>

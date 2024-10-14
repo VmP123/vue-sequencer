@@ -1,7 +1,6 @@
 @import './base.css';
 
 #app {
-  /* max-width: 1280px; */
 	width: 980px;
   margin: 0 auto;
 	padding-bottom: 10px;
@@ -9,11 +8,11 @@
 }
 
 .normal {
-  
+	color: #777777;
 }
 
 .highlighted {
-  
+	color: #181818;
 }
 
 .button {
@@ -26,7 +25,6 @@
 	font-weight: bold;
   user-select: none;
   cursor: pointer;
-	color: #181818;
 }
 .step-button {
 	border-radius: 20px;
@@ -38,5 +36,18 @@
 	height: 50px;
 	border-radius: 25px;
 	border: solid 10px;
-	
+	color: #181818;
+}
+
+.controls {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	padding-bottom: 10px;
+}
+
+.step-button-container {
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  gap: 10px;
 }

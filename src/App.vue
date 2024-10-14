@@ -83,7 +83,6 @@ function getCurrentStep() {
 
 const scheduleInterval = "96hz"; //"48hz";
 Tone.Transport.scheduleRepeat(playStep, scheduleInterval);
-
 </script>
 
 <template>
@@ -97,18 +96,3 @@ Tone.Transport.scheduleRepeat(playStep, scheduleInterval);
     </template>
   </div>
 </template>
-
-<style scoped>
-.controls {
-	display: flex;
-	justify-content: flex-end;
-	gap: 10px;
-	padding-bottom: 10px;
-}
-
-.step-button-container {
-  display: grid;
-  grid-template-columns: repeat(9, 100px);
-  gap: 10px;
-}
-</style>

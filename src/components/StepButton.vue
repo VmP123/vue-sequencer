@@ -11,10 +11,14 @@ function toggle() {
 }
 
 const divClass = computed(() => {
-	const isFirstOfFour = (columnIndex % 4) === 0;
-  return "button step-button " + (isFirstOfFour ? "highlighted" : "normal")
+  const isHighlighted = (columnIndex % 4) === 0;
+  
+  return [
+    'button',
+    'step-button',
+    isHighlighted ? 'highlighted' : 'normal'
+  ];
 });
-
 </script>
 
 <template>
