@@ -17,8 +17,10 @@ const sequencerStore = useSequencerStore();
 const isPlaying = ref(false);
 const audioContextStarted = ref(false);
 
-const player = new Tone.Player(Clave).toDestination();
-const kickPlayer = new Tone.Player(Kick).toDestination();
+const players = new Tone.Players({
+	clave: Clave,
+	kick: Kick
+}).toDestination();
 
 Tone.loaded();
 
@@ -58,9 +60,9 @@ function playStep() {
   for (let rowIndex = 0; rowIndex < rowCount; rowIndex++) {
     if (currentStep[rowIndex]) {
 			if (rowIndex == 4)
-				kickPlayer.start();
+				players.player("kick").start()
 			else if (rowIndex == 3)
-				player.start();
+				players.player("clave").start()
     }
   }
 }
